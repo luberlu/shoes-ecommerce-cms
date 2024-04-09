@@ -2,7 +2,7 @@ const parse = require("pg-connection-string").parse;
 
 module.exports = ({ env }) => ({
   connection: {
-    client: 'mysql2',
+    client: 'mysql',
     connection: {
       host: env('DATABASE_HOST', '127.0.0.1'),
       port: env.int('DATABASE_PORT', 3306),
